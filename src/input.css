@@ -17,61 +17,96 @@ header {
   @apply bg-primary;
 }
 
+.container {
+  @apply max-w-292 mx-auto px-3 relative font-poppins;
+}
+
+header {
+  @apply bg-primary;
+}
+
 @layer nav {
   nav {
-    @apply flex  justify-between items-center py-12;
+    @apply flex flex-col md:justify-between md:items-center md:py-12;
   }
 
+  /* MENU */
   nav .nav_menu {
-    @apply flex gap-x-28;
+    @apply 
+      hidden 
+      flex-col 
+      gap-y-6 
+      mt-6 
+      md:flex 
+      md:flex-row 
+      md:gap-x-28 
+      md:mt-0;
   }
 
   nav .nav_menu_li {
-    @apply font-poppins font-light hover:font-semibold duration-300  leading-tight;
+    @apply font-poppins font-light hover:font-semibold duration-300 leading-tight text-center;
   }
 
   nav .nav_menu_li a {
-    @apply relative after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 translate-y-full after:bg-[#ff7527] after:w-5  after:h-1 after:opacity-0 hover:after:opacity-100 duration-300;
+    @apply relative 
+      after:absolute 
+      after:top-full 
+      after:left-1/2 
+      after:-translate-x-1/2 
+      after:bg-[#ff7527] 
+      after:w-5 
+      after:h-1 
+      after:opacity-0 
+      hover:after:opacity-100 
+      duration-300;
   }
 }
+
 
 @layer banner {
   .banner {
-    @apply flex items-center font-poppins py-30;
+    @apply flex flex-col items-center font-poppins py-10 md:py-20 gap-y-8 bg-gray-100 rounded-2xl;
   }
 
   .banner .left {
-    @apply flex flex-col gap-y-14;
+    @apply flex flex-col gap-y-6 w-full md:w-3/4;
   }
 
   .banner .text {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-4 md:gap-6 text-center md:text-left;
   }
 
   .banner h1 {
-    @apply font-semibold leading-[150%] text-[56px];
+    @apply font-semibold leading-[140%] text-[26px] sm:text-[32px] md:text-[56px];
   }
 
   .banner p {
-    @apply font-light leading-7 text-base text-secondary w-3/4;
+    @apply font-light leading-7 text-base text-secondary w-full md:w-3/4;
   }
 
   .banner .input {
-    @apply flex  capitalize items-center gap-x-3;
+    @apply flex flex-col sm:flex-row items-stretch sm:items-center gap-4 relative w-full;
   }
 
   .banner input {
-    @apply flex items-center bg-white rounded-2xl w-3/5;
+    @apply bg-white rounded-2xl w-full sm:w-3/5;
   }
 
   .banner .banner_input {
-    @apply py-6 px-14 placeholder:text-secondary placeholder:font-light;
+    @apply py-4 sm:py-6 pl-12 sm:pl-14 pr-6 placeholder:text-secondary placeholder:font-light;
   }
 
   .banner button {
-    @apply font-light text-secondary bg-white rounded-2xl py-6 px-10;
+    @apply font-light text-secondary bg-white rounded-2xl py-4 sm:py-6 px-10 w-full sm:w-auto;
+  }
+
+  /* Placeholder Banner Background Below Search */
+  .banner .banner-placeholder {
+    @apply w-full h-48 md:h-72 mt-6 bg-gray-300 rounded-2xl flex items-center justify-center text-gray-600 text-xl;
   }
 }
+
+
 
 @layer card_section {
   .card_section .container {

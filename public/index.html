@@ -31,63 +31,69 @@
     <header>
       <!-- Navigation Menu -->
       <nav class="container">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="./images/logo.png" alt="Company Logo" />
-        </div>
-        
-        <!-- Navigation Links -->
-        <ul class="nav_menu flex">
-          <li class="nav_menu_li font-semibold!">
-            <a href="#home" class="after:opacity-100!">home</a>
-            <div class="nav_menu_icon"></div>
-          </li>
-          <li class="nav_menu_li">
-            <a href="#about">about</a>
-            <div class="nav_menu_icon"></div>
-          </li>
-          <li class="nav_menu_li">
-            <a href="#properties">properties</a>
-            <div class="nav_menu_icon"></div>
-          </li>
-          <li class="nav_menu_li">
-            <a href="#contact">contact</a>
-            <div class="nav_menu_icon"></div>
-          </li>
-        </ul>
-      </nav>
+  <!-- Logo + Toggle -->
+  <div class="flex  lg:flex-row items-center justify-between md:flex-col w-full">
+    <div class="logo">
+      <img src="./images/logo.png" alt="Company Logo" />
+    </div>
 
+    <!-- Toggle Button (sm only) -->
+    <button id="menuBtn" class="sm:block md:hidden text-white text-3xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul id="navMenu" class="nav_menu  ">
+    <li class="nav_menu_li font-semibold!">
+      <a href="#home" class="after:opacity-100!">home</a>
+      <div class="nav_menu_icon"></div>
+    </li>
+    <li class="nav_menu_li">
+      <a href="#about">about</a>
+      <div class="nav_menu_icon"></div>
+    </li>
+    <li class="nav_menu_li">
+      <a href="#properties">properties</a>
+      <div class="nav_menu_icon"></div>
+    </li>
+    <li class="nav_menu_li">
+      <a href="#contact">contact</a>
+      <div class="nav_menu_icon"></div>
+    </li>
+  </ul>
+</nav>
       <!-- Hero/Banner Section -->
       <div class="container banner">
-        <!-- Left Side - Text & Search -->
-        <div class="left w-3/4">
-          <!-- Main Heading & Description -->
-          <div class="text">
-            <h1>Temukan Hunian Keluarga Sesuai Keinginanmu</h1>
-            <p>
-              Menyediakan hunian bagi keluarga anda dengan varian pilihan dan
-              lokasi yang strategis di kota anda dengan cara yang lebih mudah.
-            </p>
-          </div>
-          
-          <!-- Search Input -->
-          <div class="input relative">
-            <input
-              type="text"
-              placeholder="Search location, properties, residental group"
-              class="banner_input"
-              aria-label="Search properties"
-            />
-            <i class="fa-solid fa-location-dot absolute top-1/2 left-6 text-xl -translate-y-1/2"></i>
-            <button type="button">search</button>
-          </div>
-        </div>
-        
-        <!-- Right Side - Banner Image -->
-        <div class="img w-1/4 aspect-373/522">
-          <img src="./images/banner.png" alt="Modern House" />
-        </div>
+  <!-- Left Side -->
+  <div class="left">
+    <div class="text">
+      <h1>Temukan Hunian Keluarga Sesuai Keinginanmu</h1>
+      <p>
+        Menyediakan hunian bagi keluarga anda dengan varian pilihan dan
+        lokasi yang strategis di kota anda dengan cara yang lebih mudah.
+      </p>
+    </div>
+
+    <div class="input">
+      <div class="relative w-full sm:w-3/5">
+        <i class="fa-solid fa-location-dot absolute top-1/2 left-6 text-xl -translate-y-1/2"></i>
+        <input
+          type="text"
+          placeholder="Search location, properties, residental group"
+          class="banner_input w-full"
+        />
       </div>
+      <button type="button">Search</button>
+    </div>
+  </div>
+
+  <!-- Right Side Image -->
+  <div class="img aspect-[373/522]">
+    <img src="./images/banner.png" alt="Modern House" />
+  </div>
+</div>
+
     </header>
 
     <!-- ========== STEPS/PROCESS SECTION ========== -->
