@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --color-primary: #eeedde;
+  --color-accent: "#FF7527";
+  --text-primaryT: "#203239";
+  --text-secondary: "#20323955";
+  --text-accent: "#ff7527";
+}
+
+.container {
+  @apply max-w-292 mx-auto px-3 relative font-poppins;
+}
+
+header {
+  @apply bg-primary;
+}
+
+@layer nav {
+  nav {
+    @apply flex  justify-between items-center py-12;
+  }
+
+  nav .nav_menu {
+    @apply flex gap-x-28;
+  }
+
+  nav .nav_menu_li {
+    @apply font-poppins font-light hover:font-semibold duration-300  leading-tight;
+  }
+
+  nav .nav_menu_li a {
+    @apply relative after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 translate-y-full after:bg-[#ff7527] after:w-5  after:h-1 after:opacity-0 hover:after:opacity-100 duration-300;
+  }
+}
+
+@layer banner {
+  .banner {
+    @apply flex items-center font-poppins py-30;
+  }
+
+  .banner .left {
+    @apply flex flex-col gap-y-14;
+  }
+
+  .banner .text {
+    @apply flex flex-col gap-6;
+  }
+
+  .banner h1 {
+    @apply font-semibold leading-[150%] text-[56px];
+  }
+
+  .banner p {
+    @apply font-light leading-7 text-base text-secondary w-3/4;
+  }
+
+  .banner .input {
+    @apply flex  capitalize items-center gap-x-3;
+  }
+
+  .banner input {
+    @apply flex items-center bg-white rounded-2xl w-3/5;
+  }
+
+  .banner .banner_input {
+    @apply py-6 px-14 placeholder:text-secondary placeholder:font-light;
+  }
+
+  .banner button {
+    @apply font-light text-secondary bg-white rounded-2xl py-6 px-10;
+  }
+}
+
+@layer card_section {
+  .card_section .container {
+    @apply flex flex-col gap-y-16 py-25;
+  }
+
+  .card_section .header {
+    @apply w-1/2 font-semibold text-4xl text-[#203239];
+  }
+
+  .card_section .cards {
+    @apply grid grid-cols-3 gap-33;
+  }
+
+  .card_section .cards .card {
+    @apply py-5 px-8 relative hover:shadow-xl duration-300 flex flex-col gap-12 rounded-xl;
+  }
+
+  .card_section .cards .card .top {
+    @apply flex-1;
+  }
+
+  .card_section .cards .card .top h2 {
+    @apply font-medium text-xl;
+  }
+
+  .card_section .cards .card .top p {
+    @apply text-secondary font-light leading-7;
+  }
+
+  .card_section .cards .card .icon {
+    @apply w-2 h-7 rounded-full bg-[#ff7527] absolute left-0 top-0 translate-y-full;
+  }
+  .card_section .cards .card .num {
+    @apply text-[#ff7527] absolute right-0 top-0 translate-y-full -translate-x-full;
+  }
+
+  .card_section .card .link {
+    @apply flex gap-2 font-medium text-[#203239]  items-center;
+  }
+}
+
+@layer work {
+  .work {
+    @apply py-16 bg-primary flex flex-col gap-16;
+  }
+
+  .header {
+    @apply flex flex-col gap-2;
+  }
+
+  .header p {
+    @apply text-[#ff7527] font-medium;
+  }
+
+  .header h2 {
+    @apply text-4xl font-semibold text-[#203239];
+  }
+
+  .work .container {
+    @apply flex flex-col gap-16;
+  }
+
+  .work .contend {
+    @apply flex justify-between  items-center;
+  }
+
+  .work .images {
+    @apply w-113 aspect-325/350 relative;
+  }
+  .work .images img {
+    @apply aspect-360/490 w-xs absolute;
+  }
+
+  .work .contend .description {
+    @apply w-1/2 flex flex-col gap-12;
+  }
+
+  .work .contend .text {
+    @apply flex flex-col gap-6;
+  }
+
+  .work .contend .text h2 {
+    @apply text-4xl font-semibold text-[#203239] leading-[150%];
+  }
+
+  .work .contend .text p {
+    @apply text-secondary font-light leading-7;
+  }
+
+  .work .contend .btn {
+    @apply flex gap-12 items-center;
+  }
+
+  .work .contend .btn button {
+    @apply py-3 px-10 font-semibold border rounded-lg border-[#203239] flex items-center gap-3 hover:cursor-pointer;
+  }
+}
+
+@layer gallery {
+  .gallery {
+    @apply py-16 flex flex-col gap-16;
+  }
+
+  .gallery .container {
+    @apply flex flex-col gap-16;
+  }
+
+  .gallery .contend .card .image {
+    @apply aspect-370/450 w-full hover:rounded-lg duration-300 overflow-hidden;
+  }
+  .gallery .contend .card .image img {
+    @apply w-full h-full object-cover;
+  }
+
+  .gallery .contend .card .text {
+    @apply p-4 flex flex-col gap-2;
+  }
+
+  .gallery .contend .card .text h2 {
+    @apply font-semibold text-[#203239] text-2xl;
+  }
+
+  .gallery .contend .card .text p {
+    @apply font-light text-secondary leading-7;
+  }
+}
+
+@layer contact {
+  .contact {
+    @apply bg-primary py-16;
+  }
+
+  .contact .container {
+    @apply flex flex-col gap-y-20;
+  }
+
+  .contact .contend {
+    @apply flex  items-end  gap-57;
+  }
+
+  .contact .call_info {
+    @apply gap-2 w-1/2 grid grid-cols-2;
+  }
+
+  .contact .card {
+    @apply bg-white rounded-2xl px-10 py-9 flex flex-col gap-4;
+  }
+
+  .contact .card .icon {
+    @apply text-4xl text-[#203239];
+  }
+
+  .contact .card p {
+    @apply text-secondary font-medium;
+  }
+
+  .contact .card h2 {
+    @apply text-base text-secondary;
+  }
+
+  .contact .card .top {
+    @apply flex  gap-3 items-center;
+  }
+
+  .contact .card .info {
+    @apply flex flex-col gap-3;
+  }
+  .contact .card .btn button {
+    @apply flex gap-3 items-center mx-auto py-2.5 px-5 rounded-md bg-[#203239] text-white font-semibold;
+  }
+
+  .contact .awards {
+    @apply flex flex-col gap-16 justify-center items-center;
+  }
+}
+
+@layer footer {
+  footer {
+    @apply bg-[#203239] py-8 ;
+  }
+
+  footer .container {
+    @apply flex justify-between items-center;
+  }
+
+  footer ul {
+    @apply flex gap-16 items-center;
+  }
+
+  footer ul li a i {
+    @apply text-primary text-xl;
+  }
+}

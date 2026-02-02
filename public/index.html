@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temukan Hunian - Real Estate Website</title>
+    
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Custom CSS -->
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+      <!-- Navigation Menu -->
+      <nav class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="Company Logo" />
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav_menu flex">
+          <li class="nav_menu_li font-semibold!">
+            <a href="#home" class="after:opacity-100!">home</a>
+            <div class="nav_menu_icon"></div>
+          </li>
+          <li class="nav_menu_li">
+            <a href="#about">about</a>
+            <div class="nav_menu_icon"></div>
+          </li>
+          <li class="nav_menu_li">
+            <a href="#properties">properties</a>
+            <div class="nav_menu_icon"></div>
+          </li>
+          <li class="nav_menu_li">
+            <a href="#contact">contact</a>
+            <div class="nav_menu_icon"></div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero/Banner Section -->
+      <div class="container banner">
+        <!-- Left Side - Text & Search -->
+        <div class="left w-3/4">
+          <!-- Main Heading & Description -->
+          <div class="text">
+            <h1>Temukan Hunian Keluarga Sesuai Keinginanmu</h1>
+            <p>
+              Menyediakan hunian bagi keluarga anda dengan varian pilihan dan
+              lokasi yang strategis di kota anda dengan cara yang lebih mudah.
+            </p>
+          </div>
+          
+          <!-- Search Input -->
+          <div class="input relative">
+            <input
+              type="text"
+              placeholder="Search location, properties, residental group"
+              class="banner_input"
+              aria-label="Search properties"
+            />
+            <i class="fa-solid fa-location-dot absolute top-1/2 left-6 text-xl -translate-y-1/2"></i>
+            <button type="button">search</button>
+          </div>
+        </div>
+        
+        <!-- Right Side - Banner Image -->
+        <div class="img w-1/4 aspect-373/522">
+          <img src="./images/banner.png" alt="Modern House" />
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== STEPS/PROCESS SECTION ========== -->
+    <section class="card_section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <h2 class="header">Tahapan Pembelian Properti yang Mudah dan Cepat</h2>
+        
+        <!-- Process Cards -->
+        <div class="cards">
+          <!-- Card 1 - Pilih Properti -->
+          <div class="card">
+            <div class="icon"></div>
+            <div class="num">01</div>
+            <div class="top">
+              <h2>Pilih Properti</h2>
+              <p>
+                Cari properti yang diinginkan sesuai dengan kriteria anda dan
+                keluarga. Cara memilih properti yang bijak dapat anda baca lebih
+                lanjut di sini
+              </p>
+            </div>
+            <div class="link">
+              <a href="#learn-more">Baca lebih Lanjut</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Card 2 - Proses Booking -->
+          <div class="card">
+            <div class="icon"></div>
+            <div class="num">02</div>
+            <div class="top">
+              <h2>Proses Booking</h2>
+              <p>
+                Pembayaran dalam bentuk sejumlah uang sebagai komitmen memesan
+                unit properti tertentu.
+              </p>
+            </div>
+            <div class="link">
+              <a href="#booking">Baca lebih Lanjut</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Card 3 - KPR dan Sertifikasi -->
+          <div class="card">
+            <div class="icon"></div>
+            <div class="num">03</div>
+            <div class="top">
+              <h2>KPR dan Sertifikasi</h2>
+              <p>
+                Pembiayaan KPR untuk pembeli rumah dengan skema pembiayaan jika
+                diperlukan dan dilanjutkan proses sertifkasi HGB.
+              </p>
+            </div>
+            <div class="link">
+              <a href="#kpr">Baca lebih Lanjut</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURED RESIDENCE SECTION ========== -->
+    <section class="work">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="header">
+          <p>Pilihan konsumen</p>
+          <h2>Residen Favorit</h2>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="contend">
+          <!-- Images Display -->
+          <div class="images">
+            <img src="./images/house1.png" alt="Featured Property 1" class="top-0 left-0" />
+            <img src="./images/house2.png" alt="Featured Property 2" class="bottom-0 right-0" />
+          </div>
+          
+          <!-- Description & CTA Buttons -->
+          <div class="description">
+            <div class="text">
+              <h2>Bangunan yang dirancang oleh Aristektur Handal</h2>
+              <p>
+                Tanpa diragukan, properti yang disediakan dalam webiste kami
+                merupakan hasil kerjasama secara profesional dengan para
+                Arsitektur ternama dan Developer yang terpercaya.
+              </p>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="btn">
+              <button class="hover:bg-[#203239] hover:text-primary duration-300">
+                <i class="fa-solid fa-phone"></i>
+                Hubungi Kami
+              </button>
+              <button class="bg-[#203239] text-primary hover:bg-primary hover:text-[#203239] duration-300">
+                Explore lebih banyak
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY/PROPERTIES SECTION ========== -->
+    <section class="gallery" id="properties">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="header">
+          <p>Pilihan Auditor</p>
+          <h2>Residen Berbagai Kota</h2>
+        </div>
+        
+        <!-- Property Cards Grid -->
+        <div class="contend grid grid-cols-3 gap-6">
+          <!-- Property 1 - Magnolia Surabaya -->
+          <div class="card">
+            <div class="image">
+              <img src="./images/gall1.jpg" alt="Magnolia Surabaya Property" />
+            </div>
+            <div class="text">
+              <h2 class="title">Magnolia Surabaya</h2>
+              <p class="description">
+                Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec.
+                Jatiuwung, Kota Tangerang, Banten 15136
+              </p>
+            </div>
+          </div>
+
+          <!-- Property 2 - Pinang Residences -->
+          <div class="card">
+            <div class="image">
+              <img src="./images/gall2.png" alt="Pinang Residences Property" />
+            </div>
+            <div class="text">
+              <h2 class="title">Pinang Residences</h2>
+              <p class="description">
+                Jl. Deplu Raya No.16 RT.5, RW.003 Bintaro, Pesanggrahan, Jakarta
+                Selatan 12330
+              </p>
+            </div>
+          </div>
+
+          <!-- Property 3 - South Grove -->
+          <div class="card">
+            <div class="image">
+              <img src="./images/gall3.jpg" alt="South Grove Property" />
+            </div>
+            <div class="text">
+              <h2 class="title">South Grove</h2>
+              <p class="description">
+                1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta
+                Selatan, Daerah Khusus Ibukota Jakarta 12440
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="header">
+          <h2>Hubungi Kami</h2>
+        </div>
+        
+        <!-- Contact Content -->
+        <div class="contend">
+          <!-- Call Information Cards -->
+          <div class="call_info">
+            <!-- Contact Card 1 -->
+            <div class="card">
+              <div class="top">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                  <p>Call</p>
+                  <h2>+62 123 4567 890</h2>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">Call Now</button>
+              </div>
+            </div>
+
+            <!-- Contact Card 2 -->
+            <div class="card">
+              <div class="top">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                  <p>Call</p>
+                  <h2>+62 123 4567 890</h2>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">Call Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards Section -->
+          <div class="awards">
+            <div class="header">
+              <h2>Penghargaan</h2>
+            </div>
+            <img src="./images/award.png" alt="Company Awards and Recognition" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer>
+      <div class="container">
+        <!-- Footer Logo -->
+        <div class="logo">
+          <img src="./images/logo-footer.png" alt="Company Logo Dark" />
+        </div>
+        
+        <!-- Social Media Links -->
+        <ul class="social_icons">
+          <li>
+            <a href="#instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#facebook" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#twitter" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
